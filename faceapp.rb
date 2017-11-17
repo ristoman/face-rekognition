@@ -9,12 +9,12 @@ Dotenv.load
 
 # Set up our AWS authentication for all calls in this app
 Aws.config.update({
-        :region => 'us-east-1',
+        :region => 'eu-west-1',
         :credentials => Aws::Credentials.new(ENV['AWS_KEY'],ENV['AWS_SECRET'])
     })
 
 # Default collection name
-FACE_COLLECTION = "faceapp_test"
+FACE_COLLECTION = "test1"
 
 # The routes
 get '/' do
